@@ -1,0 +1,17 @@
+{{ $is_list := .is_list }}
+{{ $page := .page }}
+{{ $link := "" }}
+
+{{/* ***** TODO: Deprecate `url_preprint` in favour of `url_pdf` given there's now a dedicated "Preprint" pub. type. ***** */}}
+{{ with $page.Params.url_preprint }}
+  {{ $resource := $page.Resources.GetMatch . }}
+  {{ if $resource }}
+    {{ $link = $resource.RelPermalink }}
+  {{ else }}
+    {{ $link = . | relURL }}
+  {{ end }}
+{{ end }}
+
+{{ with $page.Params.doi }}
+<div data-badge-type="donut" data-doi="{{ . }}" data-badge-popover="right" data-condensed="true" data-hide-no-mentions="true" data-hide-less-than="1" class="altmetric-embed"></div>
+{{ end }}

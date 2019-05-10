@@ -1,0 +1,17 @@
+{{ $is_list := .is_list }}
+{{ $page := .page }}
+{{ $link := "" }}
+
+{{/* ***** TODO: Deprecate `url_preprint` in favour of `url_pdf` given there's now a dedicated "Preprint" pub. type. ***** */}}
+{{ with $page.Params.url_preprint }}
+  {{ $resource := $page.Resources.GetMatch . }}
+  {{ if $resource }}
+    {{ $link = $resource.RelPermalink }}
+  {{ else }}
+    {{ $link = . | relURL }}
+  {{ end }}
+{{ end }}
+
+{{ with $page.Params.doi }}
+<span class="__dimensions_badge_embed__" data-doi="{{ . }}" data-legend="hover-right" data-style="small_rectangle" data-hide-zero-citations="true"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+{{ end }}

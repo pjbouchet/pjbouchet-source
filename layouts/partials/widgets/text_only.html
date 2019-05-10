@@ -1,0 +1,10 @@
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $autolink := default true $page.Params.autolink }}
+
+
+<div class="text-block">
+
+      {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
+
+</div>

@@ -1,0 +1,33 @@
+<footer class="site-footer">
+
+  <!---
+  Comment out this block of code to hide the Privacy Policy link
+
+  {{ with .Site.GetPage "privacy.md" }}
+  <p class="powered-by">
+    {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+  </p>
+  {{ end }}
+  -->
+  <p class="powered-by">
+    {{ with .Site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
+
+    Powered by Hugo and designed by Phil Bouchet / <a class="cc-by-link" href="https://creativecommons.org/licenses/by-nc/3.0/deed.en_US" target="_blank" rel="noopener">CC BY-NC Licensed</a> / Cover photo: <a href="https://www.instagram.com/manusanfelix_official/?hl=en" target="blank">Manu San Félix</a>
+      <!---
+        the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> and designed by Phil Bouchet
+      -->
+    {{ if ne .Type "docs" }}
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    {{ end }}
+  </p>
+
+</footer>

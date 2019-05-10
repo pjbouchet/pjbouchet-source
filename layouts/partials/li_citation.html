@@ -1,0 +1,110 @@
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+
+  <table class="pub-table">
+    <tr>
+
+  {{ if .Params.last_of_year }}
+  <div class="year-line">{{- .Date.Format "2006" -}}</div>
+  {{ end }}
+
+      <th class="firstcol">
+
+  {{/* Add open access icon */}}
+
+  {{ if .Params.open_access }}
+  <i class="ai ai-open-access ai1x"></i>
+  {{ else }}
+  {{/* <i class="far fa-file-alt pub-icon" aria-hidden="true"></i> */}}
+  {{ end }}
+
+  {{/* Number publications */}}
+
+  {{ if .Params.rank }}
+  {{- .Params.rank | markdownify -}}<span class="number-divider"> |</span>
+  {{ end }}
+
+  {{/* APA Style */}}
+  {{ if eq (site.Params.publications.citation_style | default "apa") "apa" }}
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    {{ partial "page_metadata_authors" . }}
+  </span>
+  ({{- .Date.Format "2006" -}}).
+  <a href="{{ .RelPermalink }}" itemprop="name">{{ .Title }}</a>.
+  {{ if .Params.publication_short }}
+  {{- .Params.publication_short | markdownify -}}.
+  {{ else if .Params.publication }}
+  {{- .Params.publication | markdownify -}}.
+  {{ end }}
+  <p class="publinks">{{ partial "page_links" (dict "page" . "is_list" 1) }}</p>
+
+  {{/* MLA Style */}}
+
+  {{ else }}
+
+<a href="{{ .RelPermalink }}" itemprop="name">{{.Title }}</a>.
+
+  <p itemprop="author" class="article-metadata li-cite-author">
+    {{ partial "page_metadata_authors" .}} ({{- .Date.Format "2006" -}}).
+
+      {{ if .Params.publication_short }}
+      {{- .Params.publication_short | markdownify -}},
+      {{ else if .Params.publication }}
+      {{- .Params.publication | markdownify -}},
+      {{ end }}
+
+
+      {{/* Proxy for whether this is a report */}}
+      {{ if .Params.institution }}
+
+        {{ if .Params.institution }}
+        {{- .Params.institution | markdownify -}},
+        {{ end }}
+
+        {{ if .Params.location }}
+        {{- .Params.location| markdownify -}},
+        {{ end }}
+
+        {{ if .Params.no_pages }}
+        {{- .Params.no_pages| markdownify -}}<span> p.</span>
+        {{ end }}
+
+      {{ else }}
+
+          {{ if .Params.volume }}
+          <b>{{- .Params.volume | markdownify -}}</b>:
+          {{ end }}
+
+          {{ if .Params.pages }}
+          <span>{{- .Params.pages | markdownify -}}</span>.
+          {{ end }}
+
+      {{ end }}
+
+  </p>
+
+  {{ if .Params.lay_brief }}
+  <p class="lay-summary">{{- .Params.lay_brief | markdownify -}}</p>
+  {{end}}
+
+  {{/*{{- .Date.Format "- 2006" -}}.*/}}
+
+  {{/* <a href="{{ .RelPermalink }}" itemprop="name">{{.Title }}</a>. */}}
+
+  <p class="publinks">{{ partial "page_links" (dict "page" . "is_list" 1) }}</p>
+
+  {{ end }}
+
+</th>
+
+<th class="secondcol">
+
+  <span class="altmetric_badge">{{ partial "altmetric" (dict "page" . "is_list" 1) }}</span>
+  <span class="dimensions_badge">{{ partial "dimensions" (dict "page" . "is_list" 1) }}</span>
+</th>
+</tr>
+</table>
+
+</div>

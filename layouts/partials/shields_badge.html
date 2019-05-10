@@ -1,0 +1,21 @@
+{{ $page := . }}
+{{ $featured := (.Resources.ByType "image").GetMatch "*featured*" }}
+{{ $anchor := $page.Params.image.focal_point | default "Smart" }}
+
+{{/* Set default titles for node pages */}}
+{{ $title := .Title }}
+{{ if and (not $title) .IsNode }}
+  {{ if eq .Type "post" }}
+    {{ $title = i18n "posts" }}
+  {{ else if eq .Type "talk" }}
+    {{ $title = i18n "talks" }}
+  {{ else if eq .Type "publication" }}
+    {{ $title = i18n "publications" }}
+  {{end}}
+{{end}}
+
+{{ with $page.Params.shields_badge }}
+
+<img class="shields-badge" src="https://img.shields.io/badge/Journal-{{.}}-2a87b9.svg?longCache=true&amp;style=flat-square">
+
+{{ end }}

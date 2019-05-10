@@ -1,0 +1,65 @@
+{{ $ := .root }}
+{{ $page := .page }}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  /* background-image: url("../img/cover-image.png"); */
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+  {{ if $page.Params.item }}
+  {{ range $idx, $key := sort $page.Params.item ".date_start" "desc" }}
+
+{{- with .imagefile}}
+<div class="bg" style="background-image: url(../img/{{.}});"></div>
+{{end -}}
+
+  <div class="cover-banner">
+      <div class="col-cover-left">
+      <h4 class="cover-name">{{.name | markdownify | emojify}}</h4>
+      <div class="cover-job">{{- with .job}}{{.}}{{end -}}</div>
+
+      </div>
+
+      <div class="col-cover-right">
+
+        {{ if .email }}
+        <div class="cover-email"><a href="mailto:pjbouchet@gmail.com" target="blank" rel="noopener"><i class="far fa-envelope"></i></a></div>
+        {{end}}
+
+        {{ if .twitter }}
+        <div class="cover-twitter"><a href="https://twitter.com/pjbouchet" target="blank" rel="noopener"><i class="fab fa-twitter"></i></a></div>
+        {{end}}
+
+        {{ if .github }}
+        <div class="cover-github"><a href="https://github.com/pjbouchet" target="blank" rel="noopener"><i class="fab fa-github"></i></a></div>
+        {{end}}
+
+        <div class="enter-btn"><a href="/about/">Enter</a></div>
+
+      </div>
+  </div>
+{{end}}
+{{end}}
+</body>
+</html>
