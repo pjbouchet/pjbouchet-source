@@ -146,7 +146,7 @@ a, a:hover, a:focus {
 
 /* Size of body font */
 
-body {font-size: 16px;
+body {font-size: 17px;
 -webkit-font-smoothing: antialiased;
   font-stretch:100%;
       line-height: 25px;}
@@ -299,7 +299,7 @@ body {font-size: 16px;
 .pub-table{
     width: 125%;
     max-width: 150%;
-    font-size: 16px;
+    font-size: 17px;
     -webkit-font-smoothing: antialiased;}
 
 /* Altmetric badge column */
@@ -382,7 +382,7 @@ h1 {font-size: 1.8rem;}
 
 .researchlinks{
     margin-top: 1rem;
-    font-size: 16px;
+    font-size: 17px;
     color: #096596;
     border-bottom: 1px solid #096596;}
     
