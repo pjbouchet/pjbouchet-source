@@ -47,7 +47,7 @@
 <a href="{{ .RelPermalink }}" itemprop="name">{{.Title }}</a>.
 
   <p itemprop="author" class="article-metadata li-cite-author">
-    {{ partial "page_metadata_authors" .}} ({{- .Date.Format "2006" -}}).
+    <span class="author_list">{{- .Params.author_list | markdownify -}}</span> ({{- .Date.Format "2006" -}}).
 
       {{ if .Params.publication_short }}
       {{- .Params.publication_short | markdownify -}},
