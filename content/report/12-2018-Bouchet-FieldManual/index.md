@@ -1,16 +1,16 @@
 +++
-title = "Chapter 5: Marine sampling field manual for benthic stereo BRUVS (Baited Remote Underwater Videos)."
-date = 2018-03-01T00:00:00
-author_list = "Langlois T, Williams J, Monk J, <strong>Bouchet PJ</strong>, Currey L, Goetze J, Harasti D, Huveneers C, Lerodiaconou D, Malcolm H, Whitmarsh S"
+title = "Chapter 6: Marine sampling field manual for pelagic BRUVS (Baited Remote Underwater Videos)."
+date = 2018-04-01T00:00:00
+author_list = "<strong>Bouchet PJ</strong>, Meeuwig J, Huveneers C, Langlois T, Letessier T, Lowry M, Rees M, Santana-Garcon J, Scott M, Taylor M, Thompson C, Vigliola L, Whitmarsh S"
 publication_types = ["4"]
 publication = "In: Field Manuals for Marine Sampling to Monitor Australian Waters"
 institution = "National Environmental Science Programme (NESP)"
 location = "Australia"
-no_pages = "82-104"
+no_pages = "105-132"
 open_access = true
 last_of_year = false
-rank = 9
-abstract = "This benthic stereo-BRUVs Field Manual includes gear designed to acquire imagery of demersal fish assemblages and their habitat within the field of view. A separate manual will address sampling pelagic fish assemblages using BRUVs (Chapter 6). This field manual covers everything required from equipment, pre-survey preparation, field procedures, post-survey procedures and data management for using benthic BRUVs to sample and monitor fish assemblages. The aim is to develop a consistent approach to using this field equipment and allow statistically sound comparisons between studies. Stereo-BRUVs are recommended, over mono-BRUVs, when monitoring demersal fish assemblages. Stereo-BRUVs consist of two cameras strategically and accurately placed on a frame that enable lengths and distance measurements to be made through the use of specialised software. These data are crucial to help monitor changes in fish assemblages over time. Therefore, the following standard operating procedures are written based on the use of stereo video."
+rank = 12
+abstract = "This manual relates to gear designed to acquire digital video imagery of macro-organisms living in the ocean’s water column, from small zooplankton to marine megavertebrates. A sister chapter on benthic BRUVs is included in the field package and addresses sampling protocols for demersal fish and shark assemblages (Chapter 5). The document aims to span everything from pre-survey planning to equipment preparation, field procedures, and on-board data acquisition to guarantee the efficient and correct use of pelagic BRUVs as monitoring tools in Australian Marine Parks (AMPs) and other Commonwealth waters. Such information is critical for supporting the development of consistent, concise, transparent and standardised guidelines in the collection and processing of pelagic BRUV data that can allow statistically robust comparisons between studies, sites, projects, and institutions."
 
 # Summary. An optional shortened abstract.
 summary = ""
@@ -42,7 +42,7 @@ projects = []
 # slides = ""
 
 # Links (optional).
-url_pdf = "https://www.nespmarine.edu.au/sites/default/files/_PUBLIC_/FieldManuals_NESPMarineHub_Chapter5_BRUV_v1.pdf"
+url_pdf = "https://www.nespmarine.edu.au/sites/default/files/_PUBLIC_/FieldManuals_NESPMarineHub_Chapter6_PBRUV_v1.pdf"
 # url_code = ""
 # url_dataset = ""
 # url_project = ""

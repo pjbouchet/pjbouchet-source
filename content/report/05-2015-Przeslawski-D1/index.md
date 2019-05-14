@@ -1,16 +1,16 @@
 +++
-title = "Chapter 6: Marine sampling field manual for pelagic BRUVS (Baited Remote Underwater Videos)."
-date = 2018-04-01T00:00:00
-author_list = "<strong>Bouchet PJ</strong>, Meeuwig J, Huveneers C, Langlois T, Letessier T, Lowry M, Rees M, Santana-Garcon J, Scott M, Taylor M, Thompson C, Vigliola L, Whitmarsh S"
+title = "NESP D1: Developing a toolbox of predictive models for the monitoring and management of KEFs and CMRs in the North and North-west regions"
+date = 2015-01-01T00:00:00
+author_list = "Przeslawski R, Miller K, Nichol S, <strong>Bouchet PJ</strong>, Huang Z, Kool J, Radford B, Thums M"
 publication_types = ["4"]
-publication = "In: Field Manuals for Marine Sampling to Monitor Australian Waters"
-institution = "National Environmental Science Programme (NESP)"
-location = "Australia"
-no_pages = "105-132"
+publication = "Scientific workshop report to the National Environmental Science Programme Marine Biodiversity Hub"
+institution = "Australian Institute of Marine Science"
+location = "Perth"
+no_pages = "23"
 open_access = true
 last_of_year = false
-rank = 10
-abstract = "This manual relates to gear designed to acquire digital video imagery of macro-organisms living in the ocean’s water column, from small zooplankton to marine megavertebrates. A sister chapter on benthic BRUVs is included in the field package and addresses sampling protocols for demersal fish and shark assemblages (Chapter 5). The document aims to span everything from pre-survey planning to equipment preparation, field procedures, and on-board data acquisition to guarantee the efficient and correct use of pelagic BRUVs as monitoring tools in Australian Marine Parks (AMPs) and other Commonwealth waters. Such information is critical for supporting the development of consistent, concise, transparent and standardised guidelines in the collection and processing of pelagic BRUV data that can allow statistically robust comparisons between studies, sites, projects, and institutions."
+rank = 5
+abstract = "This report summarises the outcomes of a scientific workshop conducted at Geoscience Australia as part of the NESP D1 Project. The objectives of the workshop were to discuss future research priorities for the North and North-West regions and to define current knowledge gaps by consolidating existing datasets from numerous research institutions."
 
 # Summary. An optional shortened abstract.
 summary = ""
@@ -42,7 +42,7 @@ projects = []
 # slides = ""
 
 # Links (optional).
-url_pdf = "https://www.nespmarine.edu.au/sites/default/files/_PUBLIC_/FieldManuals_NESPMarineHub_Chapter6_PBRUV_v1.pdf"
+url_pdf = "https://www.nespmarine.edu.au/system/files/NESP%20Marine%20Hub%20D1%20Developing%20toolbox%20predictive%20models%20workshop%20report%202015_FINAL_AO.pdf"
 # url_code = ""
 # url_dataset = ""
 # url_project = ""

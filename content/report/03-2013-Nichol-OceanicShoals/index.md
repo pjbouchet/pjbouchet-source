@@ -9,7 +9,7 @@ location = "Canberra"
 no_pages = "112"
 open_access = true
 last_of_year = false
-rank = 1
+rank = 3
 abstract = "This report provides details of activities undertaken by the Australian Institute of Marine Science (AIMS), Geoscience Australia, the University of Western Australia and the Museum and Art Gallery of the Northern Territory during a marine biodiversity survey to the Oceanic Shoals Commonwealth Marine Reserve (Timor Sea) in 2012. The survey was an activity within the Australian Government’s National Environmental Research Program Marine Biodiversity Hub and is a key component of Theme 4 - Regional Biodiversity Discovery to Support Marine Bioregional Plans. Data collected during the survey will be used to support research being undertaken in other Themes of the Marine Biodiversity Hub, including the modelling of ecosystem processes for the northern region, and to support the work programs of the Department of Environment."
 
 # Summary. An optional shortened abstract.

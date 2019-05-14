@@ -1,16 +1,16 @@
 +++
-title = "NESP D1: Developing a toolbox of predictive models for the monitoring and management of KEFs and CMRs in the North and North-west regions"
-date = 2015-01-01T00:00:00
-author_list = "Przeslawski R, Miller K, Nichol S, <strong>Bouchet PJ</strong>, Huang Z, Kool J, Radford B, Thums M"
+title = "A comparison of southern hemisphere breeding stock 'D' humpback whale population estimates from two key locations along the Western Australian coast"
+date = 2010-03-31T00:00:00
+author_list = "Jenner C, Jenner M, Salgado-Kent CP, <strong>Bouchet PJ</strong>, Dunlop R, Burton C"
 publication_types = ["4"]
-publication = "Scientific workshop report to the National Environmental Science Programme Marine Biodiversity Hub"
-institution = "Australian Institute of Marine Science"
+publication = "Report to the Australian Marine Mammal Centre"
+institution = "Centre for Whale Research WA Inc."
 location = "Perth"
-no_pages = "23"
+no_pages = 23
 open_access = true
-last_of_year = false
-rank = 3
-abstract = "This report summarises the outcomes of a scientific workshop conducted at Geoscience Australia as part of the NESP D1 Project. The objectives of the workshop were to discuss future research priorities for the North and North-West regions and to define current knowledge gaps by consolidating existing datasets from numerous research institutions."
+last_of_year = true
+rank = 2
+abstract = "This report aims to compare recent population estimates of southern hemisphere breeding stock D humpback whales (Megaptera novaeangliae) based on data collected at two key locations along the Western Australian coastline, namely North West Cape (NWC) and Shark Bay, ~400 km south of NWC. The report additionally investigates the efficacy and practicality of current survey designs, and serves as a reference point for future improvement in whale monitoring strategies (location of surveys, field protocols, etc.)."
 
 # Summary. An optional shortened abstract.
 summary = ""
@@ -42,7 +42,7 @@ projects = []
 # slides = ""
 
 # Links (optional).
-url_pdf = "https://www.nespmarine.edu.au/system/files/NESP%20Marine%20Hub%20D1%20Developing%20toolbox%20predictive%20models%20workshop%20report%202015_FINAL_AO.pdf"
+url_pdf = "marxiv.org/5skqb"
 # url_code = ""
 # url_dataset = ""
 # url_project = ""

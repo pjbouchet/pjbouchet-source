@@ -9,7 +9,7 @@ location = "Perth"
 no_pages = "32"
 open_access = true
 last_of_year = false
-rank = 8
+rank = 10
 abstract = "Approximately 70 kilometres south-east of Bremer Bay (119.4°E, 34.4°S) off southern Western Australia’s coast lies a group of submarine canyons that incise the continental slope, plunging to depths of more than 1,000 metres. Charismatic pelagic organisms such as cetaceans, sharks, seabirds and squid are known to concentrate in high abundance above these features. In particular, the canyons are the site of the largest reported seasonal aggregation of killer whales (Orcinus orca) in the Southern Hemisphere, with over 100 identified individuals in the local population, many of which are regularly sighted. Existing data suggest that the majority of killer whale encounters occur west of the Bremer Marine Park, around the heads of the Knob and Henry Canyons. It is unclear, however, whether this area represents a discrete and unique killer whale hotspot or whether the park may support other aggregations, be they from separate individuals or the same animals frequenting the hotspot. Furthermore, the mechanisms underpinning ocean productivity in these otherwise relatively oligotrophic waters remain largely unresolved."
 
 # Summary. An optional shortened abstract.
