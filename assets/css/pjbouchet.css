@@ -249,17 +249,17 @@ body {font-size: 17px;
     background-color: #096596;
     border-color: #096596;}
 
-/*  ++++ PDF button */
-
-.btn.btn-pdf.my-1.mr-1.btn-sm {
-    color: #808080b8;
-    background-color: white;}
-
 /*  ++++ Cite button */
 
-.btn.btn-cite.my-1.mr-1.btn-sm.js-cite-modal {
+.btn-download-bib {
+    padding: .45rem;
+    border-radius: 0;
     color: #808080b8;
-    background-color: white;}
+    background-color: #fff;
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+    font-size: .75rem;
+    font-family: Helvetica;}
 
 /* Download bib buttons */
 

@@ -35,12 +35,13 @@
 
 {{ $resource := $page.Resources.GetMatch "*.bib" }}
 {{ with $resource }}
-<button type="button" class="btn btn-cite my-1 mr-1{{ if $is_list }} btn-sm{{end}} js-cite-modal"
-        data-filename="{{ .RelPermalink }}">
+<a class="btn-download-bib" download href="{{ .RelPermalink }}">
   {{ i18n "btn_cite" }}
-</button>
+</a>
 <span class="button-separator">/</span>
 {{ end }}
+
+
 {{ with $page.Params.url_code }}
   {{ $resource := $page.Resources.GetMatch . }}
   {{ if $resource }}
