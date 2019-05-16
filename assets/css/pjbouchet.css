@@ -219,7 +219,9 @@ body {font-size: 17px;
 
 /* Button separator */
 
-.button-separator{color: #80808038;}
+.button-separator{color: #80808038;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;}
 
 /* Padding and margins around buttons */
 
@@ -241,8 +243,8 @@ body {font-size: 17px;
     border-radius: 0;
     color: #808080b8;
     background-color: white;
-    padding-top: 0.55rem;
-    padding-bottom: 0.55rem;}
+    margin: 0 !important;
+    padding: 0 !important;}
 
 .btn-outline-primary:hover {
     color: #fff;
@@ -256,10 +258,10 @@ body {font-size: 17px;
     border-radius: 0;
     color: #808080b8;
     background-color: #fff;
-    padding-top: .55rem;
-    padding-bottom: .55rem;
     font-size: .75rem;
-    font-family: Helvetica;}
+    font-family: Helvetica;
+    margin: 0 !important;
+    padding: 0 !important;}
 
 /* Download bib buttons */
 
