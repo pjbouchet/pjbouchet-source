@@ -17,7 +17,7 @@ publishDir = "../pjbouchet-github.io"
 copyright = "&copy; {year}"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-140643638-1"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""

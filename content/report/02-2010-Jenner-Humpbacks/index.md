@@ -42,7 +42,7 @@ projects = []
 # slides = ""
 
 # Links (optional).
-url_pdf = "marxiv.org/5skqb"
+url_pdf = "http://marxiv.org/5skqb"
 # url_code = ""
 # url_dataset = ""
 # url_project = ""

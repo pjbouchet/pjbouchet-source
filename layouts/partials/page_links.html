@@ -33,6 +33,13 @@
 <span class="button-separator">/</span>
 {{ end }}
 
+{{ with $page.Params.url_supinfo }}
+<a class="btn btn-SI my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
+  Suppl.
+</a>
+<span class="button-separator">/</span>
+{{ end }}
+
 {{ $resource := $page.Resources.GetMatch "*.bib" }}
 {{ with $resource }}
 <a class="btn-download-bib" download href="{{ .RelPermalink }}">
@@ -54,6 +61,7 @@
 </a>
 <span class="button-separator">/</span>
 {{ end }}
+
 {{ with $page.Params.url_dataset }}
   {{ $resource := $page.Resources.GetMatch . }}
   {{ if $resource }}
