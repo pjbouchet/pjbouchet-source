@@ -1,5 +1,5 @@
 +++
-title = "Physiological response of the coralline alga <em>Corallina officinalis L.</em> to both predicted long-term increases in temperature and short-term heatwave events"
+title = "Physiological response of the coralline alga Corallina officinalis L. to both predicted long-term increases in temperature and short-term heatwave events"
 date = 2019-07-27
 author_list = "Rendina F, <b>Bouchet PJ</b>, Appolloni L, Fulvio Russo G, Sandulli R, Kolzenburg R, Putra A, Ragazzola F"
 publication_types = ["2"]
