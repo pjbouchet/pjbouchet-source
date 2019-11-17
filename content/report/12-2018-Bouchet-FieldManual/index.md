@@ -1,5 +1,5 @@
 +++
-title = "Chapter 6: Marine sampling field manual for pelagic BRUVS (Baited Remote Underwater Videos)."
+title = "Chapter 6: Marine sampling field manual for pelagic BRUVS (Baited Remote Underwater Videos)"
 date = 2018-04-01T00:00:00
 author_list = "<strong>Bouchet PJ</strong>, Meeuwig J, Huveneers C, Langlois T, Letessier T, Lowry M, Rees M, Santana-Garcon J, Scott M, Taylor M, Thompson C, Vigliola L, Whitmarsh S"
 publication_types = ["4"]

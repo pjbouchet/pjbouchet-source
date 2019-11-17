@@ -1,5 +1,5 @@
 +++
-title = "Chapter 5: Marine sampling field manual for benthic stereo BRUVS (Baited Remote Underwater Videos)."
+title = "Chapter 5: Marine sampling field manual for benthic stereo BRUVS (Baited Remote Underwater Videos)"
 date = 2018-03-01T00:00:00
 author_list = "Langlois T, Williams J, Monk J, <strong>Bouchet PJ</strong>, Currey L, Goetze J, Harasti D, Huveneers C, Lerodiaconou D, Malcolm H, Whitmarsh S"
 publication_types = ["4"]
