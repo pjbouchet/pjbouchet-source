@@ -11,7 +11,7 @@ author = "phil"
 
 I am currently a Postdoctoral Research Associate within the [Centre for Research into Ecological & Environmental Modelling](https://www.creem.st-andrews.ac.uk/) at the University of St Andrews, Scotland. In this role, I am focusing on developing tools and guidelines for the assessment of extrapolation in predictive models of cetacean populations.
 
-<img src="/img/philbouchet.jpg" alt="Phil. J Bouchet" class="headshot"/>
+<img src="/img/phil_bouchet.jpg" alt="Phil. J Bouchet" class="headshot" height="420"/>
 
 My [research](/research) broadly spans the field of quantitative ecology, and covers an array of marine taxa (fishes, sharks, turtles & cetaceans), habitats (coastal, pelagic), approaches (empirical, simulation, theoretical), scales (local, regional, global), and bioregions (temperate, tropical). 
 

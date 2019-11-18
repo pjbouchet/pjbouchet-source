@@ -42,7 +42,7 @@ projects = []
 # slides = ""
 
 # Links (optional).
-url_pdf = "https://research-repository.st-andrews.ac.uk/handle/10023/18509"
+url_pdf = "https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/18509/Denmod_ExtrapolationReport_final_Aug2019.pdf?sequence=1&isAllowed=y"
 # url_code = ""
 # url_dataset = ""
 # url_project = ""
