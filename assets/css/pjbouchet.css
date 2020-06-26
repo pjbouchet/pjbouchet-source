@@ -165,6 +165,24 @@ body {font-size: 17px;
 
 .portrait-job {font-family: Helvetica, Arial, sans-serif;}
 
+#dsmextra-extrapolation-tools-for-density-surface-models-img-src-https-github-com-densitymodelling-dsmextra-blob-master-hex-dsmextra-hex-png-raw-true-align-left-class-dsmextra-logo {
+    font-weight: 600;
+    margin: 1.414em 0 0;
+    padding-bottom: .5em;
+    padding-top: .55em;
+    font-size: 1em;
+    font-family: source sans pro,Helvetica,Arial,sans-serif;
+    border-bottom: 1px solid #f2f3f3;
+    padding-left: 1%;
+    margin-bottom: 1.5em;
+    color: #fff;
+    background-color: #288caf;
+    border-left: solid 0 #2ea2cc;
+    color: #288caf;
+    background-color: rgba(46,162,204,.08);
+    border-left: solid 5px #2ea2cc;
+}
+
 .portrait-title h3 {
     font-size: 0.95rem;
     font-weight: 300;
@@ -435,3 +453,19 @@ footer {
 
 .fa-chevron-up{display:none !important;}
 
+/* Size of dsmextra logo on software page */
+
+.dsmextra_logo{
+  height:250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  padding-left: 1.5rem !important;
+  padding-top: 1.5rem !important;
+}
+
+.package_badge{
+  padding-right: 0.5em !important;
+  margin: 0px !important;
+}

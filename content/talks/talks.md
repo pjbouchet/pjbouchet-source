@@ -11,6 +11,8 @@ author = "phil"
 
 <h2 class="researchtitle">2019</h2>
 
+<strong>Bouchet PJ</strong>, Miller DL, Roberts JJ, Mannocci L, Harris CM, Thomas, L. (2019). Practical tools for assessing extrapolation in models of cetacean abundance. Talk at the World Marine Mammal Conference, Barcelona, Spain.
+
 <strong>Bouchet PJ</strong> (2019). Extrapolation in density surface models (DSMs). Talk at DenMod technical meeting, University of St Andrews, Scotland (UK).
 
 <strong>Bouchet PJ</strong> (2019). Transferring models in ecology and conservation: What, why, how and ( where to now? Invited seminar at the Centre for Research into Ecological & Environmental Modelling, University of St Andrews, Scotland (UK). 
