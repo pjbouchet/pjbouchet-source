@@ -1,6 +1,6 @@
 +++
 title = "True blue: Temporal and spatial stability of pelagic wildlife at a submarine canyon"
-date = 2020-08-20
+date = 2020-10-21
 author_list = "Forrest JAH, <b>Bouchet PJ</b>, Barley SC, McLennan AG, Meeuwig JJ"
 publication_types = ["2"]
 volume = "In press"
