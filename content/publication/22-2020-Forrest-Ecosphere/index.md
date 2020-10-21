@@ -12,7 +12,7 @@ abstract = "In coastal systems, marine protected areas (MPAs) have been shown to
 
 lay_brief = "" 
 featured = false
-publication = "Ecography"
+publication = "Ecosphere"
 shields_badge = ""
 tags = ["Ecology"]
 url_pdf = ""
