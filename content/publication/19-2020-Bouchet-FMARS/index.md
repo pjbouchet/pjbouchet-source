@@ -3,7 +3,7 @@ title = "Submerged carbonate banks aggregate pelagic megafauna in offshore tropi
 date = 2020-06-30
 author_list = "<b>Bouchet PJ</b>, Letessier TBL, Caley MJ, Nichol SL, Hemmi J, Meeuwig JJ"
 publication_types = ["2"]
-volume = "In press"
+volume = 7
 pages = "530"
 rank = 19
 open_access = true
@@ -15,7 +15,7 @@ featured = false
 publication = "Frontiers in Marine Science"
 shields_badge = ""
 tags = ["Ecology"]
-url_pdf = ""
+url_pdf = "https://www.frontiersin.org/articles/10.3389/fmars.2020.00530/pdf"
 doi = "10.3389/fmars.2020.00530"
 +++
 
