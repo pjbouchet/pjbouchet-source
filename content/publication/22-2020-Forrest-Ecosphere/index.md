@@ -3,8 +3,9 @@ title = "True blue: Temporal and spatial stability of pelagic wildlife at a subm
 date = 2020-10-21
 author_list = "Forrest JAH, <b>Bouchet PJ</b>, Barley SC, McLennan AG, Meeuwig JJ"
 publication_types = ["2"]
-volume = "In press"
-pages = "n/a"
+volume = 12
+issue = 3
+pages = "e03423"
 rank = 22
 open_access = true
 last_of_year = true
@@ -15,7 +16,7 @@ featured = false
 publication = "Ecosphere"
 shields_badge = ""
 tags = ["Ecology"]
-url_pdf = ""
-doi = ""
+url_pdf = "https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecs2.3423"
+doi = "10.1002/ecs2.3423"
 +++
 
