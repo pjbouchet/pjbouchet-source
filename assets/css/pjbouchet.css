@@ -2,6 +2,10 @@
 /* ---- NAVIGATION BAR ------------------------------------ */
 /* --------------------------------------------------------- */
 
+#navbar > ul > li.nav-item.dropdown > a::after{
+  display:none;
+}
+
 /* Adjust padding under menu bar */
 
 .navbar-nav li.nav-item a.nav-link {padding-bottom: 0;}
@@ -13,7 +17,9 @@
 
 /* Add light grey bottom border */
 
-.navbar-nav.ml-auto {border-bottom: 1px solid #ededed;}
+.navbar-nav.ml-auto {border-bottom: 1px solid #ededed;
+  padding-bottom: 0.25rem;
+}
 
 /* Colour of navigation menu separators */
 
@@ -22,9 +28,9 @@
     padding-right: 1px;
     font-weight:100;}
 
-.navbar-nav.ml-auto{font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;}
+.navbar-nav.ml-auto{font-family: Open Sans, Helvetica,Arial,sans-serif;}
 
-nav#navbar-main li.nav-item{font-size: 16.5px;}
+nav#navbar-main li.nav-item{font-size: 15px;}
 
 /* Adjust padding between menu items with separators */
 
@@ -107,6 +113,16 @@ html body#top nav#navbar-main.navbar.navbar-light.fixed-top.navbar-expand-lg.py-
   margin-left: 1rem;}
   
 }
+
+/* --------------------------------------------------------- */
+/* ---- ABOUT ------------------------------------ */
+/* --------------------------------------------------------- */ 
+
+/*.now{
+float: left;
+padding: 0 10px 0 0;}*/
+
+
 
 /* --------------------------------------------------------- */
 /* ---- GENERAL ------------------------------------ */
@@ -196,10 +212,8 @@ body {font-size: 17px;
     margin: 1.414em 0 0;
     padding-bottom: 0.5em;
     padding-top: 0.55em;
-    font-size: 0.85em;
-    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
     color: #288caf;
-    border-bottom: 1px solid #f2f3f3;
     background-color: rgba(46,162,204,0.08);
     border-left: solid 5px #2ea2cc;
     padding-left: 1%;
@@ -210,12 +224,58 @@ body {font-size: 17px;
 /* ---- PUBLICATIONS ------------------------------------ */
 /* --------------------------------------------------------- */ 
 
-.article-title {
-    font-size: 1rem;
-    font-weight: bold;}
+.articletitle {
+  color:#096596 !important;
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+details{
+  display:inline;
+  font-weight: normal;
+  padding-bottom: 1em;
+}
+
+details>summary {
+  list-style-type: none;
+  outline: none;
+  cursor: pointer;
+  font-weight:normal;
+  color: #808080b8;
+  background-color: #fff;
+  font-size: .85rem;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
+
+details>summary::before {
+  content: '';
+}
+
+details[open]>summary::before {
+  content: '';
+}
+
+details[open]>summary {
+  margin-bottom: 0.5rem;
+  padding-top:0.5rem;
+}
+
+.journalname{
+    background-color: rgb(163 176 181 / 8%);
+    color: #555e62;
+    font-weight: normal;
+    padding-left: 0.6rem; 
+    padding-right: 0.6rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-top: 0px solid #80808047;
+}
 
 .number-divider{
-   font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+   font-family: Open Sans,Helvetica,Arial,sans-serif;
    font-weight: 200;}
 
 /* Colour of open access icon */
@@ -228,12 +288,6 @@ body {font-size: 17px;
     max-width: 760px;
     padding: 0 20px 0 20px;
     margin: 0 auto 0 auto;}
-
-/* Font size and type for link buttons */
-
-.btn.btn-sm {
-    font-size: 0.75rem;
-    font-family: Helvetica;}
 
 /* Button separator */
 
@@ -257,12 +311,14 @@ body {font-size: 17px;
 /* Default button style */
 
 .btn.btn-sm {
-    padding: 0.45rem;
+    padding: 0.9rem;
     border-radius: 0;
+    font-family: Helvetica;
     color: #808080b8;
     background-color: white;
     margin: 0 !important;
     padding: 0 !important;}
+    
 
 .btn-outline-primary:hover {
     color: #fff;
@@ -271,12 +327,12 @@ body {font-size: 17px;
 
 /*  ++++ Cite button */
 
-.btn-download-bib {
+.btn {
     padding: .45rem;
     border-radius: 0;
     color: #808080b8;
     background-color: #fff;
-    font-size: .75rem;
+    font-size: .85rem;
     font-family: Helvetica;
     margin: 0 !important;
     padding: 0 !important;}
@@ -304,8 +360,12 @@ body {font-size: 17px;
 /* Adjust spacing above and below link buttons */
 
 .publinks{
+  display:table;
   margin-bottom: 0;
-  margin-top: 0.5rem;}
+  font-size: ;
+  margin-top: 0rem;
+  float:left;
+}
 
 .pub-table > tbody > tr:nth-child(odd) > td, table > tbody > tr:nth-child(odd) > th { background-color: transparent;}
 
@@ -315,6 +375,39 @@ body {font-size: 17px;
     vertical-align: inherit;
     border-top: 0px solid #ddd;
     font: inherit;}
+
+.col1{
+    padding: 0px;
+    border-top: 0px solid #ddd;
+}
+
+.col2{
+    padding: 0px;
+    border-top: 0px solid #ddd;
+}
+
+.journalcol1{
+    padding-top: 1rem;
+    padding-left: 0;
+    border-top: 0 solid #ddd;
+    padding-bottom: 0;
+}
+
+.journalcol2{
+    padding: 1rem;
+    border-top: 0px solid #ddd;
+}
+
+.col1 > button{
+  border: 0px !important;
+  background-color: transparent;
+  color: #808080b8;
+  padding-left:0px;
+}
+    
+.button:focus{
+  outline: 0px dotted; */
+}
 
 .pub-table{
     width: 125%;
@@ -385,6 +478,10 @@ h1 {font-size: 1.8rem;}
 /* ---- CONTACT ------------------------------------ */
 /* --------------------------------------------------------- */ 
 
+#contact{
+  height:100vh;
+}
+
 .contact-widget .fa-li {font-size: 1.2rem;}
 .contact-widget li {padding-top: 0.2rem;}
 .contact-widget .fa-li {color: #8080805c;}
@@ -399,6 +496,44 @@ h1 {font-size: 1.8rem;}
 /* ---- RESEARCH ------------------------------------ */
 /* --------------------------------------------------------- */ 
 
+#research{
+  height:100vh;
+}
+
+#research > div > div > div{
+flex: 0 0 100%;
+margin-left: 10rem;
+max-width: 960px;
+padding: 0 20px;
+margin: 0 auto;
+}
+
+.col-xs-12.col-md-8 {
+flex: 0 0 100%;
+margin-left: 10rem;
+max-width: 760px;
+padding: 0 20px;
+margin: 0 auto;
+}
+
+h3.article-title a:hover{
+color: #288caf;
+text-decoration: none;
+transition: color 0.6s ease;
+}
+
+.article-title{
+    padding-bottom: 0.5em;
+    padding-top: 0.55em;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    margin-bottom: 1.5em;
+    font-size: 18px;
+}
+
+.align-items-center {
+    align-items: flex-start !important;
+}
+
 .researchlinks{
     margin-top: 1rem;
     font-size: 17px;
@@ -411,7 +546,7 @@ h1 {font-size: 1.8rem;}
     padding-bottom: .5em;
     padding-top: .55em;
     font-size: 1em;
-    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
     border-bottom: 1px solid #f2f3f3;
     padding-left: 1%;
     margin-bottom: 1.5em;
@@ -423,7 +558,7 @@ h1 {font-size: 1.8rem;}
     border-left: solid 5px #2ea2cc;}
 
 .figcaption {
-    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
     margin-bottom: .5em;
     color: #ababab;
     font-size: 0.85rem;

@@ -11,7 +11,7 @@ author = "phil"
 
 [[item]]
   show = true
-  file = "standrews.jpg" # Picture to show below contact card
+  # file = "" # Picture to show below contact card
 +++
 
-Feel free to get in touch with any questions or comments. I am always looking for new collaborations and I am interested in hearing from prospective graduate students.
+Don't hesitate to get in touch with any questions or comments. I love a good chat! I am also always looking for new collaborations and I am very interested in hearing about potential funding opportunities.

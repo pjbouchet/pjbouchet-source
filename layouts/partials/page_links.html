@@ -26,29 +26,36 @@
   {{ end }}
 {{ end }}
 
+{{if $pdf}}
 {{ with $pdf }}
-<a class="btn btn-pdf my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
+<!--btn btn-pdf my-1 mr-1{{ if $is_list }} btn-sm{{end}}-->
+<a class="btn" href="{{ . }}" target="_blank" rel="noopener">
   {{ i18n "btn_pdf" }}
 </a>
 <span class="button-separator">/</span>
 {{ end }}
+{{end}}
 
+{{if $page.Params.url_supinfo}}
 {{ with $page.Params.url_supinfo }}
-<a class="btn btn-SI my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
+<a class="btn" href="{{ . }}" target="_blank" rel="noopener">
   Suppl.
 </a>
 <span class="button-separator">/</span>
 {{ end }}
+{{end}}
 
 {{ $resource := $page.Resources.GetMatch "*.bib" }}
+{{if $resource}}
 {{ with $resource }}
-<a class="btn-download-bib" download href="{{ .RelPermalink }}">
+<a class="btn" download href="{{ .RelPermalink }}">
   {{ i18n "btn_cite" }}
 </a>
 <span class="button-separator">/</span>
 {{ end }}
+{{ end }}
 
-
+{{if $page.Params.url_code}}
 {{ with $page.Params.url_code }}
   {{ $resource := $page.Resources.GetMatch . }}
   {{ if $resource }}
@@ -56,12 +63,15 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary-code my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+
+<a class="btn" href="{{ $link }}" target="_blank" rel="noopener">
   {{ i18n "btn_code" }}
 </a>
 <span class="button-separator">/</span>
 {{ end }}
+{{end}}
 
+{{if $page.Params.url_dataset}}
 {{ with $page.Params.url_dataset }}
   {{ $resource := $page.Resources.GetMatch . }}
   {{ if $resource }}
@@ -69,15 +79,18 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary-dataset my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="btn" href="{{ $link }}" target="_blank" rel="noopener">
   {{ i18n "btn_dataset" }}
 </a>
 <span class="button-separator">/</span>
 {{ end }}
+{{end}}
+
+
 {{ if $page.Params.projects }}
 {{ range $page.Params.projects }}
   {{ with (site.GetPage (printf "project/%s" .)) }}
-  <a class="btn btn-outline-primary-project my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
+  <a class="btn}" href="{{ .RelPermalink }}">
     {{ i18n "btn_project" }}
   </a>
   <span class="button-separator">/</span>
@@ -87,12 +100,14 @@
 {{ end }}
 {{ else }}
 {{ with $page.Params.url_project }}
-<a class="btn btn-outline-primary-project my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
+<a class="btn" href="{{ . }}" target="_blank" rel="noopener">
   {{ i18n "btn_project" }}
 </a>
 <span class="button-separator">/</span>
 {{ end }}
 {{ end }}
+
+{{if $page.Params.url_poster}}
 {{ with $page.Params.url_poster }}
   {{ $resource := $page.Resources.GetMatch . }}
   {{ if $resource }}
@@ -100,14 +115,17 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary-poster my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="btn" href="{{ $link }}" target="_blank" rel="noopener">
   {{ i18n "btn_poster" }}
 </a>
 <span class="button-separator">/</span>
 {{ end }}
+{{end}}
+
+
 {{ if $page.Params.slides }}
   {{ with (site.GetPage (printf "slides/%s" $page.Params.slides)) }}
-  <a class="btn btn-outline-primary-slides my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}" target="_blank">
+  <a class="btn" href="{{ .RelPermalink }}" target="_blank">
     {{ i18n "btn_slides" }}
   </a>
   <span class="button-separator">/</span>
@@ -120,12 +138,14 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary-slides my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="btn" href="{{ $link }}" target="_blank" rel="noopener">
   {{ i18n "btn_slides" }}
 </a>
 <span class="button-separator">/</span>
 {{ end }}
 {{ end }}
+
+{{if $page.Params.url_video}}
 {{ with $page.Params.url_video }}
   {{ $resource := $page.Resources.GetMatch . }}
   {{ if $resource }}
@@ -133,11 +153,14 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary-video my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="btn" href="{{ $link }}" target="_blank" rel="noopener">
   {{ i18n "btn_video" }}
 </a>
 <span class="button-separator">/</span>
 {{ end }}
+{{end}}
+
+{{if $page.Params.url_source}}
 {{ with $page.Params.url_source }}
   {{ $resource := $page.Resources.GetMatch . }}
   {{ if $resource }}
@@ -145,16 +168,22 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary-video my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="btn" href="{{ $link }}" target="_blank" rel="noopener">
   {{ i18n "btn_source" }}
 </a>
 <span class="button-separator">/</span>
 {{ end }}
+{{end}}
+
+{{if $page.Params.doi}}
 {{ with $page.Params.doi }}
-<a class="btn btn-doi my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
+
+<a class="btn" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
   Web
 </a>
 {{ end }}
+{{end}}
+
 {{ range $page.Params.links }}
   {{ $pack := or .icon_pack "fas" }}
   {{ $pack_prefix := $pack }}
@@ -178,6 +207,5 @@
     {{ if .icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} {{if .name}}mr-1{{end}}"></i>{{end}}
     {{ with .name }}{{ . | safeHTML }}{{end}}
   </a>
-
 
 {{ end }}

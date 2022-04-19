@@ -1,8 +1,10 @@
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<script type="text/javascript" src="/js/text-expand.js"></script>
 
 <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
 
   <table class="pub-table">
+    
     <tr>
 
   {{ if .Params.last_of_year }}
@@ -21,9 +23,18 @@
 
   {{/* Number publications */}}
 
+
   {{ if .Params.rank }}
   {{- .Params.rank | markdownify -}}<span class="number-divider"> |</span>
   {{ end }}
+
+  <span class="journalname">
+    {{ if .Params.publication_short }}
+    {{- .Params.publication_short | markdownify -}}
+    {{ else if .Params.publication }}
+    {{- .Params.publication | markdownify -}}
+    {{ end }}
+  </span>
 
   {{/* APA Style */}}
   {{ if eq (site.Params.publications.citation_style | default "apa") "apa" }}
@@ -32,7 +43,9 @@
     {{ partial "page_metadata_authors" . }}
   </span>
   ({{- .Date.Format "2006" -}}).
-  <a href="{{ .RelPermalink }}" itemprop="name">{{ .Title }}</a>.
+  <a itemprop="name" class="articletitle">{{ .Title }}</a>
+  <!--<a href="{{ .RelPermalink }}" itemprop="name">{{ .Title }}</a>.-->
+
   {{ if .Params.publication_short }}
   {{- .Params.publication_short | markdownify -}}.
   {{ else if .Params.publication }}
@@ -40,71 +53,82 @@
   {{ end }}
   <p class="publinks">{{ partial "page_links" (dict "page" . "is_list" 1) }}</p>
 
-  {{/* MLA Style */}}
+  {{/* MLA Style */}} <!-- THIS IS THE STYLE IN USE-->
 
   {{ else }}
 
-<a href="{{ .RelPermalink }}" itemprop="name">{{.Title }}</a>.
+<p class="articletitle"><a itemprop="name" >{{.Title }}</a></p>
+<!--<a href="{{ .RelPermalink }}" itemprop="name">{{.Title }}</a>.-->
 
   <p itemprop="author" class="article-metadata li-cite-author">
     <span class="author_list">{{- .Params.author_list | markdownify -}}</span> ({{- .Date.Format "2006" -}}).
+</p>
 
-      {{ if .Params.publication_short }}
-      {{- .Params.publication_short | markdownify -}},
-      {{ else if .Params.publication }}
-      {{- .Params.publication | markdownify -}},
-      {{ end }}
+{{/* Proxy for whether this is a report */}}
 
-
-      {{/* Proxy for whether this is a report */}}
-      {{ if .Params.institution }}
-
-        {{ if .Params.institution }}
-        {{- .Params.institution | markdownify -}},
-        {{ end }}
-
-        {{ if .Params.location }}
-        {{- .Params.location| markdownify -}},
-        {{ end }}
-
-        {{ if .Params.no_pages }}
-        {{- .Params.no_pages| markdownify -}}<span> p.</span>
-        {{ end }}
-
-      {{ else }}
-
-          {{ if .Params.volume }}
-          <b>{{- .Params.volume | markdownify -}}</b>:
-          {{ end }}
-
-          {{ if .Params.pages }}
-          <span>{{- .Params.pages | markdownify -}}</span>.
-          {{ end }}
-
-      {{ end }}
-
-  </p>
-
-  {{ if .Params.lay_brief }}
+   {{ if .Params.lay_brief }}
   <p class="lay-summary">{{- .Params.lay_brief | markdownify -}}</p>
   {{end}}
 
   {{/*{{- .Date.Format "- 2006" -}}.*/}}
 
-  {{/* <a href="{{ .RelPermalink }}" itemprop="name">{{.Title }}</a>. */}}
+  {{/* <a itemprop="name" class="articletitle">{{.Title }}</a>. */}}
 
-  <p class="publinks">{{ partial "page_links" (dict "page" . "is_list" 1) }}</p>
+  {{ if .Params.institution }}
+
+  <p class="report_details">
+    {{ if .Params.institution }}
+    {{- .Params.institution | markdownify -}},
+    {{ end }}
+  
+    {{ if .Params.location }}
+    {{- .Params.location| markdownify -}},
+    {{ end }}
+  
+    {{ if .Params.no_pages }}
+    {{- .Params.no_pages| markdownify -}}<span> p.</span>
+    {{ end }}
+  </p>
+
+  {{ else }}
+
+        <!--{{ if .Params.volume }}
+        <b>{{- .Params.volume | markdownify -}}</b>:
+        {{ end }}
+
+        {{ if .Params.pages }}
+        <span>{{- .Params.pages | markdownify -}}</span>.
+        {{ end }}-->
+
+    {{ end }}
+
+    <table>
+    <tr>
+    <th class="col1">   
+      <span class="publinks">{{ partial "page_links" (dict "page" . "is_list" 1) }}</span>
+      {{if .Params.abstract}}
+      {{if .Params.doi }}
+       <span class="button-separator">/</span>
+      {{end}}
+      <details>
+        <summary>Abstract</summary>
+        {{ .Params.abstract }}
+      </details>
+      {{end}}
+    </th>
+    <th class="col2">
+    </th>
+    </tr>
+    </table>
+
+     </th>
+     <th class = "secondcol">
+      <span class="altmetric_badge">{{ partial "altmetric" (dict "page" . "is_list" 1) }}</span>
+      <span class="dimensions_badge">{{ partial "dimensions" (dict "page" . "is_list" 1) }}</span>
+     </th>
+  </tr>
+  </table>
 
   {{ end }}
-
-</th>
-
-<th class="secondcol">
-
-  <span class="altmetric_badge">{{ partial "altmetric" (dict "page" . "is_list" 1) }}</span>
-  <span class="dimensions_badge">{{ partial "dimensions" (dict "page" . "is_list" 1) }}</span>
-</th>
-</tr>
-</table>
 
 </div>

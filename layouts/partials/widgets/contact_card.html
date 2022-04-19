@@ -25,12 +25,15 @@
   <div class="col-12 col-lg-4">
     <div id="profile">
 
-      {{ if site.Params.gravatar }}
+      <!-- {{ if site.Params.gravatar }}
       <img class="portrait" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=200')" itemprop="image" alt="Avatar">
       {{ else if $avatar }}
       {{ $avatar_image := $avatar.Fill "250x250 Center" }}
       <img class="portrait" src="{{ $avatar_image.RelPermalink }}" itemprop="image" alt="Avatar">
-      {{ end }}
+      {{ end }} -->
+
+      <img class="portrait" src="../img/phil_bouchet.jpg" itemprop="image">
+      
 
       <div class="portrait-title">
         <h2 itemprop="name" class="portrait_name">{{ $person.name }}</h2>
@@ -97,7 +100,9 @@
           <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
           <span id="person-email" itemprop="email">
           {{- if $autolink }}<a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>{{ else }}{{ site.Params.email }}{{ end -}}
-          </span>
+          
+          <span class="number-divider"> |</span> <a href="mailto:pjbouchet@gmail.com">pjbouchet@gmail.com</a>
+          
         </li>
         {{ end }}
 

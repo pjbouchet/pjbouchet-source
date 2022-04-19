@@ -13,10 +13,10 @@
   url = "/about/"
   weight = 20
 
-[[main]]
-  name = "Research"
-  url = "/research/"
-  weight = 30
+# [[main]]
+#  name = "Research"
+#  url = "/research/"
+# weight = 30
 
 [[main]]
   name = "Publications"
@@ -28,10 +28,29 @@
   url = "/reports/"
   weight = 50
   
-  [[main]]
+[[main]]
   name = "Software"
   url = "/software/"
+  identifier = "software"
   weight = 60
+
+[[main]]
+  name = "dsmextra"
+  url = "https://densitymodelling.github.io/dsmextra/"
+  parent = "software"
+  weight = 61
+
+[[main]]
+  name = "respondR"
+  url = "https://pjbouchet.github.io/respondR/"
+  parent = "software"
+  weight = 62
+
+[[main]]
+  name = "espresso"
+  url = "https://github.com/pjbouchet/espresso/"
+  parent = "software"
+  weight = 63
 
 [[main]]
   name = "Talks"

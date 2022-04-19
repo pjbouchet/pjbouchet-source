@@ -66,7 +66,7 @@ subtitle = ""
  css_class = ""
 +++
 
-I strongly believe in transparent research that is accessible to all. My gold open access publications are indicated by the <i class="ai ai-open-access ai1x"></i> symbol, and I make all others available either on free institutional servers or on <a href="https://marxiv.org/" target="_blank">MarXiv</a>, the public domain research repository for the ocean and marine-climate sciences. 
+I strongly believe in transparent research that is accessible to all. My gold open access publications are indicated by the <i class="ai ai-open-access ai1x"></i> symbol. PDF copies of other articles can be downloaded using the links below.
 
-Take a look at my <a href="https://scholar.google.com/citations?user=X5SMt_8AAAAJ" target="_blank">Google scholar</a> and <a href="https://www.researchgate.net/profile/Phil_Bouchet" target="_blank">ResearchGate profiles</a> for scholarly impact statistics and additional citation metrics.
+Take a look at my <a href="https://scholar.google.com/citations?user=X5SMt_8AAAAJ" target="_blank">Google scholar</a> and <a href="https://www.researchgate.net/profile/Phil_Bouchet" target="_blank">ResearchGate</a> profiles for impact statistics and citation metrics.
 

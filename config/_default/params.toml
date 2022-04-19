@@ -53,9 +53,9 @@ time_format = "3:04 PM"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "pjbouchet@gmail.com"
-phone = "(+44) (0)7398 342 547"
-address = "Centre for Research into Ecological & Environmental Modelling (CREEM)<br> The Observatory, Buchanan Gardens, University of St Andrews<br> St Andrews Fife KY16 9LZ Scotland (UK)"
+email = "pb282@st-andrews.ac.uk"
+phone = ""
+address = "Centre for Research into Ecological & Environmental Modelling (CREEM)<br> The Observatory, Buchanan Gardens, University of St Andrews<br> St Andrews, Fife, KY16 9LZ Scotland (UK)"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 # office_hours = """Monday 10:00 to 13:00<br>
