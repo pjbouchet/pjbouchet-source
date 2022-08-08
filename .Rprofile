@@ -1,1 +1,1 @@
-source("/Users/philippebouchet/Google Drive/Documents/git/pjbouchet/pjbouchet-source/R/bibtex2academic.R")
+source("/Volumes/GoogleDrive/My Drive/Documents/git/pjbouchet/pjbouchet-source/R/bibtex2academic.R")

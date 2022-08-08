@@ -1,8 +1,8 @@
-create_foldername <- function(x, PubNo){
+create_foldername <- function(x, pubNo){
   author1 <- str_split(x["author"], " and ")[[1]][1]
   allblanks <- str_locate_all(author1, " ")[[1]]
   author1 <- str_trim(str_sub(author1, allblanks[nrow(allblanks), 2], nchar(author1)))
-  paste(PubNo, x[["year"]], author1, abbreviate(x[["journal"]], use.classes = TRUE), sep = "-")
+  paste(pubNo, x[["year"]], author1, abbreviate(x[["journal"]], use.classes = TRUE), sep = "-")
 }
 
 # function to create the filename
@@ -73,7 +73,7 @@ create_md <- function(x,
     pages <- x[["pages"]]
     write(paste0("pages = ", ifelse(is.null(pages), '""', pages)), fileConn, append = T)
     
-    write(paste0("rank = ", PubNo), fileConn, append = T)
+    write(paste0("rank = ", pubNo), fileConn, append = T)
     
     write(paste0("open_access = ", tolower(open)), fileConn, append = T)
     
@@ -112,6 +112,7 @@ create_md <- function(x,
     write("url_video = \"\"", fileConn, append = T)
     write("url_poster = \"\"", fileConn, append = T)
     write("url_source = \"\"", fileConn, append = T)
+    write("url_supinfo = \"\"", fileConn, append = T)
     
     #other stuff
     write("math = true", fileConn, append = T)
@@ -146,7 +147,7 @@ bibtex2academic <- function(bibfile, lastOfyear, ...) {
   # Import the bibtex file and convert to data.frame
   mypubs <- RefManageR::ReadBib(bibfile, check = "warn", .Encoding = "UTF-8")
   
-  folder.out <- create_foldername(data.frame(mypubs), PubNo)
+  folder.out <- create_foldername(data.frame(mypubs), pubNo)
   dir.create(path = paste0("content/publication/", folder.out))
   
   RefManageR::WriteBib(mypubs, file = file.path("content", "publication", 
@@ -175,5 +176,5 @@ bibtex2academic <- function(bibfile, lastOfyear, ...) {
         TRUE ~ "0"
       ))
   
-  create_md(x = mypubs, folder.path = folder.out, lastOfyear = lastOfyear, ...)
+  create_md(x = mypubs, folder.path = folder.out, lastOfyear = lastOfyear, pubNo = pubNo, ...)
 }
