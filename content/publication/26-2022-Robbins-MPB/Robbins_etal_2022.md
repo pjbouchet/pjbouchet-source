@@ -1,5 +1,5 @@
 +++
-title = "Shipping in the north-east atlantic: identifying spatial and temporal patterns of change"
+title = "Shipping in the north-east Atlantic: Identifying spatial and temporal patterns of change"
 date = 2022-08-08
 author_list = "Robbins JR, <b>Bouchet PJ</b>, Miller DL, Evans PGH, Waggitt J, Ford AT, Marley SA"
 publication_types = ["2"]
@@ -7,7 +7,7 @@ volume = 179
 pages = 113681
 rank = 26
 open_access = true
-last_of_year = true
+last_of_year = false
 abstract = "Maritime traffic is increasing globally, with a four-fold increase in commercial vessel movements between 1992 and 2012. Vessels contribute to noise and air pollution, provide pathways for non-native species, and collide with marine wildlife. While knowledge of shipping trends and potential environmental impacts exists at both local and global levels, key information on vessel density for regional-scale management is lacking. This study presents the first in-depth spatio-temporal analysis of shipping in the north-east Atlantic region, over three years in a five-year period. Densities increased by 34%, including in 73% of Marine Protected Areas. Western Scotland and the Bay of Biscay experienced the largest increases in vessel density, predominantly from small and slow vessels. Given well-documented impacts that shipping can have on the marine environment, it is crucial that this situation continues to be monitored – particularly in areas designated to protect vulnerable species and ecosystems which may already be under pressure."
 abstract_short = ""
 publication = "Marine Pollution Bulletin"

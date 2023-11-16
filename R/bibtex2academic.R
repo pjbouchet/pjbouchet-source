@@ -127,7 +127,7 @@ create_md <- function(x,
   }
 }
 
-bibtex2academic <- function(bibfile, lastOfyear, ...) {
+bibtex2academic <- function(bibfile, lastOfyear = TRUE, ...) {
   
   require(RefManageR)
   require(dplyr)
