@@ -1,6 +1,6 @@
 +++
 title = "Aerial abundance estimates for two sympatric dolphin species at a regional scale using distance sampling and density surface modeling"
-date = 2023-11-16
+date = 2023-01-16
 author_list = "Raudino HC, <b>Bouchet PJ</b>, Douglas C, Douglas R, Waples K"
 publication_types = ["2"]
 volume = 10
